@@ -5,9 +5,15 @@ builds/
 *.xcapp
 *.pck
 
-# Android build artifacts
-android/build/
+# Android build artifacts (generated files only)
 android/.gradle/
+android/build/.gradle/
+android/build/build/
+android/build/.kotlin/
+android/build/intermediates/
+android/build/outputs/
+android/build/libs/
+android/build/obj/
 android/local.properties
 
 # IDE
