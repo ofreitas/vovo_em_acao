@@ -1,0 +1,44 @@
+# Godot build files
+builds/
+*.apk
+*.ipa
+*.xcapp
+*.pck
+
+# Android build artifacts
+android/build/
+android/.gradle/
+android/local.properties
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.thumbs.db
+
+# Godot specific
+.godot/
+*.import
+user://
+*.tres~
+*.tscn~
+
+# Keystore (chaves de assinatura sensíveis)
+*.keystore
+*.jks
+
+# Dependencies/Cache
+.gradle/
+.m2/
+
+# Temporary files
+*.tmp
+*.bak
+.sync
+.trash
