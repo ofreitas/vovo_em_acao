@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://baby_scene"]
+
+[ext_resource type="Script" path="res://scripts/entities/Baby.gd" id="1_baby_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/baby_happy.png" id="2_thais_happy"]
+[ext_resource type="Texture2D" path="res://assets/sprites/baby_crying.png" id="3_thais_crying"]
+[ext_resource type="Texture2D" path="res://assets/sprites/baby_terezinha.png" id="4_terezinha_crying"]
+[ext_resource type="Texture2D" path="res://assets/sprites/baby_terezinha_happy.png" id="5_terezinha_happy"]
+
+[node name="Baby" type="CharacterBody2D"]
+script = ExtResource("1_baby_script")
+thais_happy_texture = ExtResource("2_thais_happy")
+thais_crying_texture = ExtResource("3_thais_crying")
+terezinha_crying_texture = ExtResource("4_terezinha_crying")
+terezinha_happy_texture = ExtResource("5_terezinha_happy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_thais_happy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c1j1huxhxmw4p"]
+
+[ext_resource type="Script" uid="uid://b52xwxmkrxd5q" path="res://scripts/GameScene.gd" id="1_game_scene"]
+[ext_resource type="PackedScene" path="res://scenes/components/Baby.tscn" id="2_baby"]
+[ext_resource type="PackedScene" uid="uid://di3flqtbsp0bk" path="res://scenes/components/HUD.tscn" id="3_hud"]
+
+[node name="GameScene" type="Node2D" unique_id=434711755]
+script = ExtResource("1_game_scene")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1805208487]
+offset_right = 720.0
+offset_bottom = 1600.0
+color = Color(0.9449761, 0.9700901, 0.99298066, 1)
+
+[node name="Baby" parent="." unique_id=1739718455 instance=ExtResource("2_baby")]
+position = Vector2(360, 640)
+
+[node name="HUD" parent="." unique_id=1970725402 instance=ExtResource("3_hud")]
+
+[node name="ActionTimer" type="Timer" parent="." unique_id=1956446933]
+one_shot = true
+
+[connection signal="action_selected" from="HUD" to="." method="handle_action_selected"]
+[connection signal="timeout" from="ActionTimer" to="." method="_on_action_timer_timeout"]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/ActionData.gd" id="1_fralda"]
+[ext_resource type="Texture2D" path="res://assets/sprites/atlas_fralda.tres" id="2_fralda"]
+
+[resource]
+script = ExtResource("1_fralda")
+id = "fralda"
+action_name = "Trocar Fralda"
+texture = ExtResource("2_fralda")

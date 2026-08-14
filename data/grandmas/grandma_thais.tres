@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/GrandmaData.gd" id="1_thais"]
+[ext_resource type="Texture2D" path="res://assets/sprites/grandma_thais.png" id="2_thais"]
+
+[resource]
+script = ExtResource("1_thais")
+id = "thais"
+grandma_name = "Vovó Thais"
+description = "Uma vovó de primeira viagem, ainda aprendendo os truques."
+texture = ExtResource("2_thais")
+speed = 100.0
+wisdom = 0.0
+patience = 3
+unlocked = true

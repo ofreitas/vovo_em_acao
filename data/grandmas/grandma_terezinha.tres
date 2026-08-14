@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/GrandmaData.gd" id="1_terezinha"]
+[ext_resource type="Texture2D" path="res://assets/sprites/grandma_terezinha.png" id="2_terezinha"]
+
+[resource]
+script = ExtResource("1_terezinha")
+id = "terezinha"
+grandma_name = "Vovó Terezinha"
+description = "Uma vovó experiente e ágil, com muitas habilidades."
+texture = ExtResource("2_terezinha")
+speed = 150.0
+wisdom = 0.5
+patience = 3
+unlocked = true

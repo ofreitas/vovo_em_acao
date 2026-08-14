@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[android]
+
+modules_enabled=["org.godotengine.godot.GodotPayment"]
+
+[application]
+
+config/name="Vovó em Ação"
+config/description="Um jogo 2D para Android onde a vovó precisa cuidar do bebê."
+config/icon="res://icon.png"
+run/main_scene="res://scenes/main_menu/MainMenu.tscn"
+config/features=PackedStringArray("4.7")
+
+[autoload]
+
+GameManager="res://scripts/autoloads/GameManager.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[editor_metadata]
+
+_editor_description="Projeto do jogo Vovó em Pânico"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

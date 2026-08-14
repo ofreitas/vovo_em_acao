@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/ActionData.gd" id="1_chupeta"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pacifier_action_icon.png" id="2_chupeta"]
+
+[resource]
+script = ExtResource("1_chupeta")
+id = "dar_chupeta"
+action_name = "Dar Chupeta"
+texture = ExtResource("2_chupeta")
